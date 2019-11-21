@@ -12,6 +12,8 @@ jobs:
       - run: ls -a
       - run: ls node_modules
       - run: export NODE_ENV=$(pwd)/node_modules
+      - run: echo $(pwd)/node_modules
+      - run: echo $NODE_ENV
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
         with:
