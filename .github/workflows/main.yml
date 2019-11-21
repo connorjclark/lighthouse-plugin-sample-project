@@ -10,17 +10,17 @@ jobs:
       # - run: mv node_modules/lighthouse-plugin-social-sharing . # move the Lighthouse plugin one folder upward, this is currently a hack,
       - run: npm install
       - run: mv node_modules/lighthouse-plugin-social-sharing /home/runner/work/_actions/treosh/lighthouse-ci-action/v2/node_modules
-      - run: ls -a
-      - run: ls node_modules
-      - run: echo $(pwd)/node_modules
+      # - run: ls -a
+      # - run: ls node_modules
+      # - run: echo $(pwd)/node_modules
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
             https://lighthouse-plugin-sample-project.glitch.me/
           configPath: ./lighthouserc.json
-          env: |
-            NODE_ENV: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
+          # env: |
+            # NODE_ENV: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
       - name: Save results
         uses: actions/upload-artifact@v1
         with:
