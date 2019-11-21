@@ -17,6 +17,7 @@ jobs:
           urls: |
             https://lighthouse-plugin-sample-project.glitch.me/
           configPath: ./lighthouserc.json
+      - run: ls -a
       - name: Save results
         uses: actions/upload-artifact@v1
         with:
