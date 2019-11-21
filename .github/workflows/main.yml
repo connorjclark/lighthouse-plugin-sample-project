@@ -10,6 +10,7 @@ jobs:
       # - run: mv node_modules/lighthouse-plugin-social-sharing . # move the Lighthouse plugin one folder upward, this is currently a hack,
       - run: npm install
       - run: ls
+      - run: ls node_modules
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
         with:
