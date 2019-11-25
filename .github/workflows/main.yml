@@ -19,7 +19,7 @@ jobs:
           urls: |
             https://lighthouse-plugin-sample-project.glitch.me/
           configPath: ./lighthouserc.json
-          env:
+          env: |
             NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
       - name: Save results
         uses: actions/upload-artifact@v1
