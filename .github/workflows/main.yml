@@ -9,7 +9,7 @@ jobs:
       - name: Audit URLs using Lighthouse
         uses: connorjclark/lighthouse-ci-action@master
         env:
-          NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules:/home/runner/work/_actions/treosh/lighthouse-ci-action/v2/node_modules
+          NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules:/home/runner/work/_actions/connorjclark/lighthouse-ci-action/master/node_modules
         with:
           urls: |
             https://lighthouse-plugin-sample-project.glitch.me/
