@@ -4,10 +4,10 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - name: 'blah'
-        env:
-          NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
-        run: echo $NODE_PATH
+      # - name: 'blah'
+      #   env:
+      #     NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
+      #   run: echo $NODE_PATH
       - uses: actions/checkout@v1 # checkout this repo, so you can run an 'npm install'
       # - run: npm install # needed to install your Lighthouse Plugin
       # - run: npm install lighthouse # install missing Lighthouse, this is currently a hack
