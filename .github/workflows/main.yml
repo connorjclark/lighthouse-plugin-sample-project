@@ -15,12 +15,12 @@ jobs:
       # - run: echo $(pwd)/node_modules
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
+        env:
+          NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
         with:
           urls: |
             https://lighthouse-plugin-sample-project.glitch.me/
           configPath: ./lighthouserc.json
-          env:
-            NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
       - name: Save results
         uses: actions/upload-artifact@v1
         with:
