@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: 'blah'
         env:
-          NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules;/home/runner/work/_actions/treosh/lighthouse-ci-action/v2/node_modules
+          NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
         run: echo $NODE_PATH
       - uses: actions/checkout@v1 # checkout this repo, so you can run an 'npm install'
       # - run: npm install # needed to install your Lighthouse Plugin
