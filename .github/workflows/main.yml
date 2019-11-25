@@ -19,8 +19,8 @@ jobs:
       # - run: echo $(pwd)/node_modules
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
-        # env:
-        #   NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules /home/runner/work/_actions/treosh/lighthouse-ci-action/v2/node_modules
+        env:
+          NODE_PATH: /home/runner/work/lighthouse-plugin-sample-project/lighthouse-plugin-sample-project/node_modules
         with:
           urls: |
             https://lighthouse-plugin-sample-project.glitch.me/
